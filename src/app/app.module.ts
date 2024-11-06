@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { CoreModule } from './core/core.module';
-import { BookModule } from './book/book.module';
-import { AuthorModule } from './author/author.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
-const modules = [BookModule, AuthorModule];
+const modules = [AuthModule, UsersModule];
 
 @Module({
   imports: [CoreModule, ...modules],
